@@ -4,7 +4,22 @@
     margin: 0;
     padding: 0;
     height: auto;
+   /* font-family: Be Vietnam; */
+    
 }
+/* .listaMenu li{
+    list-style: none;
+    text-decoration: none;
+    
+} */
+
+
+
+/* Body */
+body{
+    height: 900px;
+}
+
 
 /* Encabezado */
 header{
@@ -22,7 +37,7 @@ header{
     width: 15%;
 }
 
-.botonContact{
+.boton{
     /* border:5px solid red; */
     border-radius: 50px;
     background: #8B48BF;
@@ -32,55 +47,142 @@ header{
     width:80%;
 }
 
-/* .menu{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-   
-}  */
 
 .listaMenu{
     display: inline-flex;
     align-items: center;
     flex-wrap: wrap;
     list-style: none;
+    text-decoration: none;
     justify-content: space-around;
-    width: 40%;
-    
-  
+    width: 40vw;
+     
 }
 
 .listaMenu li{
     margin-left: 0.5%;
 }
 
-/* Body */
-body{
-    height: 850px;
+
+.firstBox{
+    display: flex;
+    align-items: center;
+    height: 30%;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+.firstText{
+    width: 30%;
+    text-align:right;
+    font-size: 1.2rem;
+     
+}
+
+h1{
+    font-size:3rem;
+    color:#232C50;
 }
 
 
+.barra{
+    display:flex;
+    align-items: center;
+    background-color: #8B48BF;
+    color:white;
+    justify-content: space-around;
+    padding: 1rem;
+
+}
+
+h2{
+    font-size:2rem;
+    width:30%;
+    font-family: Be Vietnam;
+
+}
+
+.textoBarra{
+    width:40%;
+
+}
+
+
+.features{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  
+}
+
+.feature{
+    width: 40%;
+    
+}
+
+
+.sectionPlayers{
+    text-align: center;
+    /* margin: auto; */
+    width:100%;
+
+}
+
+.players{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto; 
+    width:90%;
+
+}
+
+.player{
+    background-color: #B9B9C1;
+    /* background-color: rgba(185, 185, 193, 1); */
+    /* #3F4868 */
+}
 
 /* Footer */
 footer{
+    display: flex;
+    justify-content: space-around;
     background-color:black;
     color: white;
 }
-.accesos{
-    display:flex;
-    /* flex-direction: column; */
-    font-family: Be Vietnam;
+
+.logoFooter{
+
 }
 
-.sportitpie{
-    font-size: 30px;
-    text-align:left;
-}
-
-.iconos-redes-sociales{
+.icons{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
+    display:flex;
+    /* flex-direction: column; */
+    
+    width:20%;
 }
+
+.listaFooter{
+    width: 50%;
+    color:white;     
+}
+
+ul li{
+    list-style: none;
+    text-decoration: none;
+}
+
+.searchContainer{
+    width:30%;
+}
+
+.copyright{
+
+}
+
+
