@@ -5,6 +5,8 @@
     <title>Sportit</title>
     <link rel="stylesheet" href="css/styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&display=swap" rel="stylesheet">
+
   </head>
 
   <body>
@@ -19,11 +21,12 @@
         <li><a href="">Community</a></li>
       </ul>
 
-      <div class="contact">
+      <div class="botones">
         <button class="boton">Contact</button>
       </div>
     </header>
 
+       <!-- section -->
     <div class="container">
       <div class="firstBox">
         <img src="img/padel-intro.png" alt="padelIntro" />
@@ -35,12 +38,13 @@
             don't miss out on any of the action!
           </p>
           <br />
-          <div class="contact">
+          <div class="botones">
             <button class="boton">Contact</button>
           </div>
         </div>
       </div>
 
+      <!-- section -->
       <div class="barra">
         <h2>What´s different between pros?</h2>
         <p class="textoBarra">
@@ -50,6 +54,7 @@
         </p>
       </div>
 
+         <!-- section -->
       <div class="features">
         <div class="feature">
           <div class="number">
@@ -93,8 +98,9 @@
         </div>
       </div>
 
+         <!-- section -->
       <div class="sectionPlayers">
-        <h2>Best of the month</h2>
+        <h2 class="bestMonth">Best of the month</h2>
 
         <div class="players">
           <div class="player">
@@ -128,14 +134,15 @@
           </div>
         </div>
 
-        <div class="contact" id="more">
+        <div class="botones" id="more">
           <button class="boton">More</button>
         </div>
       </div>
 
-      <div class="barra">
+      
+      <div class="barra" id="barra2">
         <h2>Get to know the best teams of the year</h2>
-        <div class="contact">
+        <div class="botones">
           <button class="boton" id="go">Go for it</button>
         </div>
       </div>
@@ -168,18 +175,14 @@
                 </ul>
               </div>
         
-              <div class="searchContainer">
-                <input
-                  type="text"
-                  id="searchBox"
-                  placeholder="Update in your inbox..."
-                />
-                <button class="boton" id="searchButton">Go</button>
-              </div>
+            <form>
+                <input type="text" placeholder="Update in your inbox...">
+                <button class="boton" id="searchButton" type="submit">Go</button>
+            </form>
+
+
 
         </div>
-     
-
       <span class="copyright">Copyright 2020. All Rights Reserved</span>
     </footer>
   </body>
