@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    height: 100%;
     font-family: 'Be Vietnam Pro', sans-serif; 
 }
 /* .listaMenu li{
@@ -21,23 +20,29 @@ body{
     display: flex; 
     flex-direction: column;
     height: auto;
-    width: 100%;
+    width: auto;
 }
+
+
+
 
 header{
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+
     /* height: 2rem;  */
     height: auto;
     justify-content: space-around;
-    /* width:100%; */
-    margin: 2.5rem 0;
+    margin-bottom: 2rem;
+}
+
+header > :nth-child(2) {
+    visibility: hidden;
 }
 
 .cajaBotones{
     height: 4rem;
-    width: 12rem;
+    width: 20%;
     padding: 0.5rem;
 } 
 
@@ -48,9 +53,11 @@ header{
     background: #8B48BF;
     box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
     color:white;
+    cursor: pointer;
     font-size: 1rem;
     height:100%;
     width:80%;
+    
 }
 
 .listaMenu{
@@ -60,7 +67,12 @@ header{
     list-style: none;
     text-decoration: none;
     justify-content: space-around;
-    width: 40vw;    
+    width: 60%;  
+    padding-left: 1%;
+}
+
+.logo{
+    width: 12%;
 }
 
 .listaMenu li{
@@ -74,25 +86,45 @@ ul li{
 .container{
     /* height: 120rem; */
     /* height: auto; */
-    /* width: 100%; */
-    min-height: 100%;
+
+    /* min-height: 100%; */
 }
 
 .firstBox{
     display: flex;
-    align-items: center;
-    height: 30%;
-    justify-content: space-around;
-    /* width: 100%; */
+    height: 20%;
+    width: 98%; 
     padding-bottom: 5rem;
-    margin-top: 3rem;
+    margin: auto;
+    border: yellow 2px solid;;
+    
 
 }
 
+.mainImage{
+    width: 100%;
+    size: cover;
+    border: red solid 2px;
+    flex: 1;
+
+}
+
+.mainImage img{
+    max-width: 100%;
+    min-width: 18rem;
+    transition: all 0.01s;
+    height: auto;
+}
+
+
 .firstText{
-    width: 30%;
     text-align:right;
     font-size: 1.2rem;
+    flex: 1;
+}
+
+.firstText h1{
+    max-width: 1;
 }
 
 h1{
@@ -151,17 +183,21 @@ h2{
 }
 
 .feature{
-    width: 38%;
-    display: flex;
+    width: 40%;
     color: #B3B2B7;
     padding-bottom: 3rem;
     
 }
 
+.featureSubtitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .number{
     border-radius: 50px;
-    width: 50%;
-    height: 40%;
+    width: 10rem;
+    height: 4rem;
 }
 
 h3{
@@ -220,6 +256,7 @@ footer{
     background-color:black;
     color: white;
     height: auto;
+    width: 100%;
 }
 
 .footerContent{
@@ -240,7 +277,7 @@ footer{
     align-items: flex-start;
     height: 50%;
     /* border: orange solid 2px; */
-    padding-top: 5rem; 
+    padding-top: 3%; 
 }
 
 .listaFooter{
@@ -277,11 +314,14 @@ footer{
     width: 5rem;
 }
 
+form{
+    padding-right: 5%;
+}
 
 input[type="text"]{
     border-radius: 1rem;
     height: 2rem;
-    padding: 1rem;
+    /* padding: 1rem; */
     width: 12rem;
 }
 
@@ -289,8 +329,152 @@ input[type="text"]{
 .copyright{
     display: flex;
     flex-direction: row-reverse;
-    margin-right: 14rem;
+    margin-right: 8.5%;
     padding-bottom: 2rem;
 }
 
 
+@media (max-width: 500px) {
+
+      *{
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+
+      }
+
+
+     .body{  
+        height: auto;
+        box-sizing: border-box;
+        align-items: center;
+        width: 100%;
+        
+      }
+
+
+      /* Encabezado vista mobile */
+
+      header{
+        display: flex;
+        background-color: #8B48BF;
+        flex-direction: row;
+        width: 100%;
+
+      }
+        
+
+      header .cajaBotones{
+        visibility: hidden;
+   
+      }
+
+      header > :nth-child(2) {
+        visibility: visible;
+      }
+
+      .listaMenu li {
+        margin: 5px;
+    }
+    
+    
+    .menu-button {
+        cursor: pointer;
+    }
+    
+    
+    .menu-checkbox .listaMenu {
+        display: block;
+    }
+
+    /* Primera sección */
+    .firstText{
+        width: 70%;
+        text-align:right;
+        font-size: 1.2rem;
+    }
+
+    .barra h2,
+    .barra .textoBarra{
+        align-content: start;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    
+ 
+
+
+    /* Seccion features */
+
+    .feature{
+        margin: auto;
+        width: 90%;
+      
+    }
+
+    .featureSubtitle{
+        background-color: #8B48BF4D;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    /* Seccion de jugadores */
+
+    .player{
+        width: 80%;
+    }
+
+
+    #barra2 h2{
+       text-align: center;
+       width: 80%;
+    }
+
+
+
+    /* Pie de página */
+
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+   .footerContent {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center; /* Centra horizontalmente los elementos dentro de .footerContent */
+        width: 90%;
+        }
+
+    .listaFooter{
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        border: 3px red solid;
+    }
+
+    .listaFooter ul{
+        align-content: center;
+    }
+    
+    .icons{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: auto;
+        width: 90%;
+    }
+
+    .mediaIcons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 20%;
+        width: 60%;
+    }
+
+ }
