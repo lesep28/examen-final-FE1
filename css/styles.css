@@ -28,29 +28,30 @@ header{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    /* height: 10rem;  */
+    /* height: 2rem;  */
     height: auto;
     justify-content: space-around;
     /* width:100%; */
+    margin: 2.5rem 0;
 }
+
+.cajaBotones{
+    height: 4rem;
+    width: 12rem;
+    padding: 0.5rem;
+} 
+
 
 .botones{
-    /* border:5px solid blue; */
-    height: 4rem;
-    width: 12rem;;
-}
-
-
-.boton{
     /* border:5px solid red; */
     border-radius: 50px;
     background: #8B48BF;
     box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
     color:white;
-    height: 100%;
+    font-size: 1rem;
+    height:100%;
     width:80%;
 }
-
 
 .listaMenu{
     display: inline-flex;
@@ -84,6 +85,7 @@ ul li{
     justify-content: space-around;
     /* width: 100%; */
     padding-bottom: 5rem;
+    margin-top: 3rem;
 
 }
 
@@ -98,6 +100,11 @@ h1{
     color:#232C50;
 }
 
+#btnFirstBox{
+    display: inline-block;
+    align-self: right;
+    width: 12rem;
+}
 
 .barra{
     display:flex;
@@ -127,6 +134,8 @@ h2{
 .bestMonth{
     text-align: center;
     width: 100%;
+    position: relative;
+    top:-3rem;
 }
 
 .textoBarra{
@@ -145,6 +154,7 @@ h2{
     width: 38%;
     display: flex;
     color: #B3B2B7;
+    padding-bottom: 3rem;
     
 }
 
@@ -162,10 +172,9 @@ h3{
 .sectionPlayers{
     text-align: center;
     /* margin: auto; */
-    width:100%;
+    width: 100%;
     height: 30%;
     padding-bottom: 10rem;
-
 }
 
 .players{
@@ -179,12 +188,27 @@ h3{
     background-color: rgb(249, 249, 249);
     padding: 1rem;
     width: 30%;
+    position:15rem;
 }
 
-#more{
-    margin: auto;
+.foto{
+    padding-top: -3rem;
+    position: relative;
+    top:-3rem;
+}
+
+h4{
+    color: #3F4868;
     padding-bottom: 1rem;
-    
+}
+#more{
+    display: inline-block;
+    margin-bottom: 2rem;
+    align-self: center;
+}
+
+#btnMore{
+    padding: 0.8rem 1rem 1rem;
 }
 
 #go{
@@ -192,11 +216,9 @@ h3{
     color: #8B48BF;
 }
 
-
 footer{
     background-color:black;
     color: white;
-    /* height: 15rem; */
     height: auto;
 }
 
@@ -209,14 +231,16 @@ footer{
 .icons{
     width:12%;
     /* border: yellow solid 2px; */
+    
 }
 
 .mediaIcons{
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: flex-start;
     height: 50%;
     /* border: orange solid 2px; */
+    padding-top: 5rem; 
 }
 
 .listaFooter{
@@ -265,9 +289,8 @@ input[type="text"]{
 .copyright{
     display: flex;
     flex-direction: row-reverse;
-    margin-right: 12rem;
-    padding-bottom: 10rem;
-    /* margin-bottom: 2rem; */
+    margin-right: 14rem;
+    padding-bottom: 2rem;
 }
 
 
