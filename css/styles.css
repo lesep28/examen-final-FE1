@@ -453,7 +453,7 @@ input[type="text"] {
 
 
     /* Seccion de jugadores */
-    .players> :nth-child(1),
+    .players> :nth-child(1),s
     .players> :nth-child(3) {
         display: none;
 
@@ -483,12 +483,12 @@ input[type="text"] {
         align-content: center;
         justify-content: space-evenly;
         width: 100%;
-        border: orange 2px solid;;
        
     }
 
     form {
-        width: 90%;
+        height: 50px;
+        width: 85%;
         flex-direction: row;
         justify-content: space-around;
 
@@ -497,25 +497,23 @@ input[type="text"] {
     input[type="text"] {
         border-radius: 6vw;
         width: 70%;
-        height: 70%;
-        padding: 2vw;
+        height: 100%;
+        padding-left: 1rem;
         
     }
 
     #searchButton{
-        width: 20%;
+        width: 18%;
         height: 100%;
-   
     }
 
     .listaFooter {
         width: 80%;
         display: flex;
         flex-direction: row;
-        height: auto;
-        margin: 5vw 0;
+        margin: 1rem 0;
+   
     }
-
 
     .list {
         width: 50%;
