@@ -5,7 +5,7 @@
     font-family: 'Be Vietnam Pro', sans-serif; 
 }
 /* .listaMenu li{
-    list-style: none;
+    list-style: none;https://github.com/lesep28/examen-final-FE1
     text-decoration: none;
     
 } */
@@ -33,7 +33,11 @@ header{
     margin-bottom: 1.5rem;
 }
 
-header > :nth-child(2) {
+/* header > :nth-child(2) {
+    visibility: hidden;
+} */
+
+.menuButton{
     visibility: hidden;
 }
 
@@ -51,7 +55,7 @@ header > :nth-child(2) {
     box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
     color:white;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.5vw;
     height:100%;
     width:80%;
     
@@ -112,19 +116,14 @@ ul li{
     height: auto;
 }
 
-
 .firstText{
     text-align:right;
-    font-size: 1.2rem;
+    font-size: 2vw;
     flex: 1;
 }
 
-.firstText h1{
-    max-width: 1;
-}
-
 h1{
-    font-size:3vw;
+    font-size:5vw;
     color:#232C50;
 }
 
@@ -141,7 +140,6 @@ h1{
     color:white;
     justify-content: center;
     padding: 1rem;
-
 }
 
 #barra2{
@@ -150,45 +148,53 @@ h1{
 }
 
 h2{
-    font-size: 2.25rem;
+    font-size: 3vw;
     padding: 2rem;
     /* border: 2px solid blue; */
     font-weight: 500px;
     line-height: 1.1;
     letter-spacing: -0.2px;
-    width: 40%;   
+    width: 40%;
 }
 
 .bestMonth{
     text-align: center;
     width: 100%;
     position: relative;
-    top:-3rem;
+    color:#232C50;
+    font-weight: bold;
+    font-size: 3vw;
+    letter-spacing: -2px;
+    
+
 }
 
 .textoBarra{
     width:30%;
 }
 
-
 .features{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 4rem;
+    padding: 1rem;
+    background-color: rgb(249, 249, 249);
+    margin-bottom: 5vw;
 }
 
 .feature{
+    display: flex;
     width: 40%;
     color: #B3B2B7;
     padding-bottom: 3rem;
-    
 }
 
+/* OJOOOO     REPASAR ocultamos por vista inadecuada */
 .featureSubtitle{
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
+    visibility: hidden; 
 }
 .number{
     border-radius: 50px;
@@ -206,7 +212,8 @@ h3{
     /* margin: auto; */
     width: 100%;
     height: 30%;
-    padding-bottom: 10rem;
+    /* padding-bottom: 10rem; */
+  
 }
 
 .players{
@@ -214,6 +221,7 @@ h3{
     align-items: center;
     justify-content: center;
     padding-bottom: 1rem;
+    margin-top: 5vw;
 }
 
 .player{
@@ -329,59 +337,62 @@ input[type="text"]{
     padding-bottom: 2rem;
 }
 
+/* ------------ */
+/* VISTA MOBILE */
+/* ------------ */
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
 
-      *{
+    *{
         margin: 0;
         padding: 0;
         flex-direction: column;
-
-      }
-
-
-     .body{  
-        height: auto;
         box-sizing: border-box;
+    }
+
+
+    .body{  
+        height: auto;
         align-items: center;
         width: 100%;
-        
-      }
+    }
 
 
       /* Encabezado vista mobile */
 
-      header{
-        display: flex;
+    header{
+        /* display: flex; */
         background-color: #8B48BF;
-        flex-direction: row;
+     
         width: 100%;
+        /* flex-wrap: wrap; */
+        justify-content: space-around;
+    }
 
-      }
-        
-
-      header .cajaBotones{
+    header .cajaBotones{
         visibility: hidden;
-   
-      }
+    }
 
-      header > :nth-child(2) {
+    .imgHeader{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* header > :nth-child(2) {
         visibility: visible;
-      }
+        border: 2px solid green;
+    } */
 
-      .listaMenu li {
-        margin: 5px;
+    .listaMenu {
+        visibility: hidden;
     }
-    
-    
-    .menu-button {
+    .menuButton {
         cursor: pointer;
+        border: 3px solid pink;
+        visibility: visible;
     }
-    
-    
-    .menu-checkbox .listaMenu {
-        display: block;
-    }
+
 
     /* Primera sección */
     .firstText{
@@ -397,22 +408,18 @@ input[type="text"]{
         margin-left: 0;
     }
 
-    
- 
-
-
     /* Seccion features */
 
     .feature{
         margin: auto;
         width: 90%;
-      
     }
 
     .featureSubtitle{
         background-color: #8B48BF4D;
         display: flex;
         flex-direction: row;
+        visibility: visible;
     }
 
 
