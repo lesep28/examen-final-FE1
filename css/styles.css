@@ -471,19 +471,26 @@ input[type="text"] {
 
     /* Pie de página */
 
+    .footer{
+        width: 100%;
+    }
+
     .footerContent {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
         /* Centra horizontalmente los elementos dentro de .footerContent */
         align-content: center;
-        justify-content: space-around
+        justify-content: space-evenly;
+        width: 100%;
+        border: orange 2px solid;;
+       
     }
 
     form {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
+        width: 90%;
+        flex-direction: row;
+        justify-content: space-around;
 
     }
 
@@ -497,6 +504,8 @@ input[type="text"] {
 
     #searchButton{
         width: 20%;
+        height: 100%;
+   
     }
 
     .listaFooter {
