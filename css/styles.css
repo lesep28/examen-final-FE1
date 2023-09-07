@@ -453,7 +453,7 @@ input[type="text"] {
 
 
     /* Seccion de jugadores */
-    .players> :nth-child(1),s
+    .players> :nth-child(1),
     .players> :nth-child(3) {
         display: none;
 
