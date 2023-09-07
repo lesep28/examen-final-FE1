@@ -33,12 +33,8 @@ header{
     margin-bottom: 1.5rem;
 }
 
-/* header > :nth-child(2) {
-    visibility: hidden;
-} */
-
-.menuButton{
-    visibility: hidden;
+header > :nth-child(2) {
+    display: none;
 }
 
 .cajaBotones{
@@ -354,45 +350,39 @@ input[type="text"]{
     .body{  
         height: auto;
         align-items: center;
-        width: 100%;
+     
     }
-
 
       /* Encabezado vista mobile */
 
     header{
-        /* display: flex; */
+        display: flex; 
+        flex-direction: row;
         background-color: #8B48BF;
-     
         width: 100%;
-        /* flex-wrap: wrap; */
-        justify-content: space-around;
+        padding: 2vw;
+   
     }
 
     header .cajaBotones{
-        visibility: hidden;
+        display: none;
     }
 
-    .imgHeader{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-    }
 
-    /* header > :nth-child(2) {
-        visibility: visible;
-        border: 2px solid green;
-    } */
+     header > :nth-child(2) {
+       display: flex;
+        
+    } 
 
     .listaMenu {
-        visibility: hidden;
+        display: none;
     }
     .menuButton {
         cursor: pointer;
         border: 3px solid pink;
-        visibility: visible;
-    }
+        border: 2px solid green;
 
+    }
 
     /* Primera sección */
     .firstText{
