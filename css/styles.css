@@ -71,12 +71,19 @@ header> :nth-child(2) {
     display: inline-flex;
     align-items: center;
     flex-wrap: wrap;
+    font-size: 1.2rem;
     list-style: none;
     text-decoration: none;
     justify-content: space-around;
     width: 60%;
     margin-left: 1rem;
+    color: #242E52;
    
+}
+
+.listaMenu a:hover{
+    color: #c78c19;
+    text-decoration: underline;
 }
 
 .logo {
@@ -97,9 +104,9 @@ ul li {
 
 .firstBox {
     display: flex;
-    height: 17%;
-    width: 97%;
-    padding-bottom: 3vw;
+    height: 10%;
+    width: 80%;
+    padding: 1rem 0;
     margin: auto;
 
 }
@@ -107,7 +114,6 @@ ul li {
 .mainImage {
     width: 100%;
     size: cover;
-    border: red solid 2px;
     flex: 1;
 
 }
@@ -119,19 +125,25 @@ ul li {
 }
 
 .firstText {
+    color: #232C50;
+    font-weight: 700;
     text-align: right;
-    font-size: 2vw;
     flex: 1;
+    padding-left: 8%;
+    
 }
 
-h1 {
-    font-size: 5vw;
-    color: #232C50;
-}
+
+.firstText p:first-child{
+    font-size: 4vw;
+    letter-spacing: -1.75px;
+    }
+
+
 
 #btnFirstBox {
     display: inline-block;
-    width: 12rem;
+    width: 9rem;
 }
 
 .barra {
@@ -140,7 +152,7 @@ h1 {
     background-color: #8B48BF;
     color: white;
     justify-content: center;
-    padding: 1rem;
+    padding: 1.5vw;
 }
 
 #barra2 {
@@ -149,10 +161,11 @@ h1 {
 }
 
 h2 {
-    font-size: 3rems;
-    padding: 2rem;
+    font-size: 2vw;
+    transition: all 0.01s;
+    padding: 1rem;
     /* border: 2px solid blue; */
-    font-weight: 500px;
+    font-weight: bold;
     line-height: 1.1;
     letter-spacing: -0.2px;
     width: 40%;
@@ -171,7 +184,9 @@ h2 {
 }
 
 .textoBarra {
-    width: 30%;
+    width: 40%;
+    font-size: 1.3vw;
+    transition: all 0.01s;
 }
 
 .features {
@@ -203,7 +218,6 @@ h2 {
     justify-content: flex-start;
     position: relative;
     left: -18%;
-
 
 }
 
@@ -278,7 +292,7 @@ footer {
 .footerContent {
     display: flex;
     justify-content: center;
-    padding-top: 4%;
+    padding-top: 2%;
     width: 90%;
 }
 
@@ -357,9 +371,18 @@ input[type="text"] {
 @media (min-width: 601px) and (max-width: 800px){
 
 
+    .listaMenu {
+        font-size: 1rem;
+        margin-left: 0.4rem;
+       
+    }
+
+
     .footerContent{
         margin: auto;
     }
+
+
     form{
       flex-direction: column;
       width: 23%;
@@ -427,6 +450,7 @@ input[type="text"] {
         text-align: right;
         font-size: 1.2rem;
         margin: auto;
+        padding-top: 1rem;
     }
 
     .cajaBotones {
@@ -441,11 +465,15 @@ input[type="text"] {
         font-size: 9vw;
     }
 
+
+    .barra{
+        background-color: #3CDDF3;
+    }
+
     .barra h2,
     .barra .textoBarra {
         align-content: start;
         width: 100%;
-        margin-left: 0;
     }
 
     /* Seccion features */
@@ -467,10 +495,17 @@ input[type="text"] {
 
     }
 
+    .featureSubtitle h3{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+
     .number {
         border-radius: 50px;
-
     }
+
 
 
     /* Seccion de jugadores */
