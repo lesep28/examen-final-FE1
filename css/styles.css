@@ -330,7 +330,7 @@ input[type="text"] {
 /* VISTA MOBILE  intermedia*/
 /* ---------------------- */
 
-@media (min-width: 601px) and (max-width: 800px){
+@media (min-width: 651px) and (max-width: 900px){
 
     .listaMenu {
         display: none;
@@ -343,6 +343,11 @@ input[type="text"] {
     header> :nth-child(2) {
         display: flex;
         cursor: pointer;
+    }
+
+    #header{
+        padding: 65px 0;
+        justify-content: space-around;
     }
 
     .footerContent{
@@ -365,7 +370,7 @@ input[type="text"] {
 /* VISTA MOBILE */
 /* ------------ */
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
 
     * {
         margin: 0;
@@ -374,7 +379,6 @@ input[type="text"] {
         box-sizing: border-box;
     }
 
-
     .body {
         height: auto;
         align-items: center;
@@ -382,20 +386,20 @@ input[type="text"] {
 
     /* Encabezado vista mobile */
     #header {
-        display: inline-flex;
-        flex-direction: row; 
+        display: flex;
+        flex-direction: row;  
         width: 100%;
-        /* padding: 2vw 0; */ 
+        padding: 65px 0;
         justify-content: space-around;
-        /* align-items: center; */
-         /* gap:100px;  */
+        gap:0;
+        border: 3px solid yellow
     }
 
     header .cajaBotones {
         display: none;
     }
 
-    header> :nth-child(2) {
+    #header> :nth-child(2) {
         display: flex;
         cursor: pointer;
     }
@@ -403,7 +407,6 @@ input[type="text"] {
     .listaMenu {
         display: none;
     }
-
 
     /* Primera sección */
     .firstText {
@@ -432,7 +435,6 @@ input[type="text"] {
         background-color: #3CDDF3;
         justify-content: flex-start;
         display: flex;
-
     }
 
     .barra h2{
@@ -515,7 +517,6 @@ input[type="text"] {
         flex-direction: row;
         justify-content: space-around;
         margin-top: 1rem;
-
     }
 
     input[type="text"] {
@@ -523,7 +524,6 @@ input[type="text"] {
         width: 70%;
         height: 100%;
         padding-left: 1rem;
-        
     }
 
     #searchButton{
