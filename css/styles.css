@@ -3,13 +3,14 @@
     margin: 0;
     padding: 0;
     font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 16px;
+    font-style: normal;
 }
 
-/* .listaMenu li{
-    list-style: none;https://github.com/lesep28/examen-final-FE1
-    text-decoration: none;
-    
-} */
+ul li{
+    list-style: none;
+}
+
 
 a:link {
     text-decoration: none;
@@ -18,21 +19,19 @@ a:link {
 
 
 body {
-    /* height: 900px; */
     display: flex;
     flex-direction: column;
     height: auto;
     width: auto;
 }
 
-header {
-    margin-bottom: 1.5rem;
-    display: flex;
-    justify-content: space-around;
-    height: auto;
-    margin: auto;
-    width: 90%;
-   
+#header {
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    padding: 65px 165px;
+    gap: 14%;
 }
 
 
@@ -52,7 +51,6 @@ header> :nth-child(2) {
 
 
 .botones {
-    /* border:5px solid red; */
     border-radius: 1.5rem;
     background: #8B48BF;
     box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
@@ -64,21 +62,18 @@ header> :nth-child(2) {
     align-items: center;
     padding: 0.65rem;
     width: 88%;
-
 }
 
-.listaMenu {
-    display: inline-flex;
+.listaMenu li {
+    display:inline-flex;
+    padding-right: 1.7rem;
     align-items: center;
-    flex-wrap: wrap;
-    font-size: 1.2rem;
-    list-style: none;
-    text-decoration: none;
-    justify-content: space-around;
-    width: 60%;
-    margin-left: 1rem;
+    font-size: 0.8rem;
+    justify-content: center;
     color: #242E52;
-   
+    font-style: normal;
+    font-weight: 500;
+    line-height: 176.1%;
 }
 
 .listaMenu a:hover{
@@ -86,30 +81,18 @@ header> :nth-child(2) {
     text-decoration: underline;
 }
 
-.logo {
-    width: 14%;
-}
-
-
-ul li {
-    list-style: none;
-}
-
-
 .firstBox {
     display: flex;
     height: 10%;
     width: 80%;
     padding: 1rem 0;
     margin: auto;
-
 }
 
 .mainImage {
     width: 100%;
     size: cover;
     flex: 1;
-
 }
 
 .mainImage img {
@@ -124,17 +107,13 @@ ul li {
     text-align: right;
     flex: 1;
     padding-left: 8%;
-    
 }
-
 
 .firstText p:first-child{
     font-size: 4vw;
     font-weight: bold;
     letter-spacing: -1.75px;
     }
-
-
 
 #btnFirstBox {
     display: inline-block;
@@ -155,11 +134,14 @@ ul li {
     justify-content: space-around;
 }
 
+#barra2 h2{
+    color:#B9B9C1;
+}
+
 h2 {
     font-size: 2vw;
     transition: all 0.01s;
     padding: 1rem;
-    /* border: 2px solid blue; */
     font-weight: bold;
     line-height: 1.1;
     letter-spacing: -0.2px;
@@ -170,12 +152,10 @@ h2 {
     text-align: center;
     width: 100%;
     position: relative;
-    color: #232C50;
-    font-weight: bold;
-    font-size: 3vw;
-    letter-spacing: -2px;
-
-
+    color: #242E53;
+    font-weight: 700;
+    font-size: 39.214px;
+    letter-spacing: -0.392px;
 }
 
 .textoBarra {
@@ -200,27 +180,21 @@ h2 {
     flex-direction: column;
     width: 40%;
     color: #B3B2B7;
-    padding-bottom: 3rem;
+    padding: 2.5rem 0;
 }
 
-/* OJOOOO     REPASAR ocultamos por vista inadecuada */
 .featureSubtitle {
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
     border-radius: 1.2rem 0 0 1.2rem;
     display: flex;
     justify-content: flex-start;
     position: relative;
     left: -18%;
-
 }
 
 .number {
     border-radius: 1.5rem;
     width: 18%;
     height: 25%;
-
 }
 
 h3 {
@@ -232,11 +206,8 @@ h3 {
 
 .sectionPlayers {
     text-align: center;
-    /* margin: auto; */
     width: 100%;
     height: 30%;
-    /* padding-bottom: 10rem; */
-
 }
 
 .players {
@@ -265,6 +236,9 @@ h4 {
     padding-bottom: 1rem;
 }
 
+.player p{
+    color:#B9B9C1;
+}
 #more {
     display: inline-block;
     margin-bottom: 2rem;
@@ -293,7 +267,6 @@ footer {
 
 .icons {
     width: 25%;
-
 }
 
 .mediaIcons {
@@ -308,16 +281,11 @@ footer {
     width: 45%;
     display: flex;
     justify-content: space-around;
-
-
 }
 
 
 .listaFooter ul {
-    /* border: 3px solid red; */
-   
     font-size: 1.6vw;
-
 }
 
 .listaFooter ul li {
@@ -326,17 +294,10 @@ footer {
 
 .listaFooter ul li a {
     color: white;
-    /* font-size: 1rem; */
-    /* font-weight: 400; */
-    /* line-height: normal; */
 }
 
-/* .listaFooter ul li:nth-last-child(-n+3) {
-} */
-
-
 #searchButton {
-     height: 30%;
+    height: 30%;
     width: 5rem; 
 }
 
@@ -348,11 +309,7 @@ form {
 input[type="text"] {
     border-radius: 1rem;
     height: 30%;
-
-    /* padding: 1rem; */
- 
 }
-
 
 .copyright {
     display: flex;
@@ -361,35 +318,39 @@ input[type="text"] {
     padding-bottom: 2rem;
 }
 
-
+/* ------------------------ */
+/* VISTA MOBILE  intermedia*/
+/* ---------------------- */
 
 @media (min-width: 601px) and (max-width: 800px){
 
-
     .listaMenu {
-        font-size: 1rem;
-        margin-left: 0.4rem;
-       
+        display: none;
     }
 
+    .cajaBotones {
+        display: none;
+    }
+
+    header> :nth-child(2) {
+        display: flex;
+        cursor: pointer;
+    }
 
     .footerContent{
         margin: auto;
     }
 
-
     form{
-      flex-direction: column;
-      width: 23%;
-      align-items: center;
-      line-height: 2;
-
+        flex-direction: column;
+        width: 23%;
+        align-items: center;
+        line-height: 2;
     }
 
     #searchButton{
         margin-top: 1rem;
     }
-
 }
 
 /* ------------ */
@@ -409,23 +370,19 @@ input[type="text"] {
     .body {
         height: auto;
         align-items: center;
-
     }
 
     /* Encabezado vista mobile */
-
     header {
         display: flex;
         flex-direction: row;
         width: 100%;
         padding: 2vw 0;
-
     }
 
     header .cajaBotones {
         display: none;
     }
-
 
     header> :nth-child(2) {
         display: flex;
@@ -438,8 +395,6 @@ input[type="text"] {
 
 
     /* Primera sección */
-
-
     .firstText {
         width: 80%;
         text-align: right;
@@ -452,14 +407,11 @@ input[type="text"] {
         display: flex;
         justify-content: center;
         text-align: center;
-
     }
-
 
     h1 {
         font-size: 9vw;
     }
-
 
     .barra{
         background-color: #3CDDF3;
@@ -472,10 +424,8 @@ input[type="text"] {
     }
 
     /* Seccion features */
-
     .features {
         padding: 1rem;
-
     }
 
     .feature {
@@ -487,7 +437,6 @@ input[type="text"] {
         background-color: #8B48BF4D;
         flex-direction: row;
         position: static;
-
     }
 
     .featureSubtitle h3{
@@ -496,24 +445,19 @@ input[type="text"] {
         justify-content: center;
     }
 
-
     .number {
         border-radius: 50px;
     }
-
-
 
     /* Seccion de jugadores */
     .players> :nth-child(1),
     .players> :nth-child(3) {
         display: none;
-
     }
 
     .player {
         width: 80%;
     }
-
 
     #barra2 h2 {
         text-align: center;
@@ -521,7 +465,6 @@ input[type="text"] {
     }
 
     /* Pie de página */
-
     .footer{
         width: 100%;
     }
@@ -534,7 +477,6 @@ input[type="text"] {
         align-content: center;
         justify-content: space-evenly;
         width: 100%;
-       
     }
 
     form {
@@ -563,7 +505,6 @@ input[type="text"] {
         width: 85%;
         flex-direction: row;
         padding: 3.5vw 0;
-      
     }
 
     .list li{
