@@ -46,7 +46,6 @@ header> :nth-child(2) {
     padding: 0.5rem;
     display: flex;
     justify-content: center;
-    border: 2px solid yellow;
 }
 
 
@@ -113,7 +112,7 @@ header> :nth-child(2) {
     font-size: 4vw;
     font-weight: bold;
     letter-spacing: -1.75px;
-    }
+}
 
 #btnFirstBox {
     display: inline-block;
@@ -129,13 +128,16 @@ header> :nth-child(2) {
     padding: 1.5vw;
 }
 
-#barra2 {
+.barra2Content{
     display: flex;
-    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #barra2 h2{
-    color:#B9B9C1;
+    color:rgba(255,255,255,1);
 }
 
 h2 {
@@ -245,10 +247,16 @@ h4 {
     align-self: center;
 }
 
+#cajaGo{
+    width: 80%;
+    height: 50%;
+}
 
 #go {
     background-color: #FFFFFF;
     color: #8B48BF;
+    height: 70%;
+    width: 12rem;
 }
 
 footer {
@@ -373,11 +381,14 @@ input[type="text"] {
     }
 
     /* Encabezado vista mobile */
-    header {
-        display: flex;
-        flex-direction: row;
+    #header {
+        display: inline-flex;
+        flex-direction: row; 
         width: 100%;
-        padding: 2vw 0;
+        /* padding: 2vw 0; */ 
+        justify-content: space-around;
+        /* align-items: center; */
+         /* gap:100px;  */
     }
 
     header .cajaBotones {
@@ -403,27 +414,39 @@ input[type="text"] {
         padding-top: 1rem;
     }
 
+    .firstText p:first-child{
+        font-size: 2.5rem;
+    }
+
     .cajaBotones {
         display: flex;
         justify-content: center;
         text-align: center;
     }
 
-    h1 {
+    h1{
         font-size: 9vw;
     }
 
     .barra{
         background-color: #3CDDF3;
+        justify-content: flex-start;
+        display: flex;
+
     }
 
-    .barra h2,
-    .barra .textoBarra {
-        align-content: start;
-        width: 100%;
+    .barra h2{
+        font-size: 2.25rem;
+        width: 90%;
+        padding-left: 0;
     }
+    
+    .barra .textoBarra{
+        width: 90%;
+        font-size: 1rem;
+        padding: 0.5rem 0;
+}
 
-    /* Seccion features */
     .features {
         padding: 1rem;
     }
@@ -462,6 +485,13 @@ input[type="text"] {
     #barra2 h2 {
         text-align: center;
         width: 80%;
+        font-size: 2.5rem;
+    }
+    #go{
+        background-color: rgba(35, 44, 80, 1);
+        color:rgba(255, 255, 255, 1);
+        margin: 2rem 0;
+
     }
 
     /* Pie de página */
@@ -534,5 +564,4 @@ input[type="text"] {
         justify-content: center;
         width: 100%;
     }
-
 }
