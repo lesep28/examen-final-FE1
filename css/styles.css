@@ -62,7 +62,7 @@ header> :nth-child(2) {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1vw;
+    padding: 0.65rem;
     width: 88%;
 
 }
@@ -95,12 +95,6 @@ ul li {
     list-style: none;
 }
 
-.container {
-    /* height: 120rem; */
-    /* height: auto; */
-
-    /* min-height: 100%; */
-}
 
 .firstBox {
     display: flex;
@@ -126,7 +120,7 @@ ul li {
 
 .firstText {
     color: #232C50;
-    font-weight: 700;
+    font-weight: 500px;
     text-align: right;
     flex: 1;
     padding-left: 8%;
@@ -136,6 +130,7 @@ ul li {
 
 .firstText p:first-child{
     font-size: 4vw;
+    font-weight: bold;
     letter-spacing: -1.75px;
     }
 
